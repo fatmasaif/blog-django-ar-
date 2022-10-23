@@ -3,6 +3,14 @@
     src: url(../fonts/Tajawal-Regular.ttf) format(truetype),
     local('Tajawal');
 }
-body{
+
+html,body {
+    direction: rtl;
+    text-align: right;
+}
+
+body {
+    
     font-family: 'Tajawal',sans-serif;
+   
 }
