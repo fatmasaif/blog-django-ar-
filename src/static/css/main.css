@@ -10,7 +10,7 @@ html,body {
 }
 
 body {
-      background-color: red;
+     
       font-family: 'Tajawal',sans-serif;
    
 }
@@ -20,7 +20,7 @@ body {
 }
 
 
-.post{
-    background-color: blueviolet;
+.post {
+    
     border: 1px solid #ccc;
 }

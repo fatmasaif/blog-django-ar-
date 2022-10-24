@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"> 
     <link rel="stylesheet"    href="{% static 'css/main.css' %}">
-    <title>المدونة</title>
-
+    {% if title %}
+         <title> مدونة | {{ title }}   </title>
+    {% else %}
+         <title> مدونة    </title>
+    {% endif %}    
 </head>
 <body>
     <header>
