@@ -1,4 +1,13 @@
 {% extends 'blog/base.html' %}
+{% load static %}
+
 {% block content %}
- <h1>جزء خاص بالتدوينات</h1>
+ {% for post in posts %}
+  <div>
+    <img src="{% static 'images/user.png'%}" alt="صورة الناشر" class="img-fluid" width="60px">
+    <span>نشر في : {{post.post_date}}</span>
+    <h3><a href="#">{{ post.title }}</a></h3>
+    <p>{{ post.content}}</p>
+  </div>
+  {% endfor %}
 {% endblock content %}
