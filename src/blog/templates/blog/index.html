@@ -3,7 +3,7 @@
 
 {% block content %}
  {% for post in posts %}
-  <div>
+  <div class="post">
     <img src="{% static 'images/user.png'%}" alt="صورة الناشر" class="img-fluid" width="60px">
     <span>نشر في : {{post.post_date}}</span>
     <h3><a href="#">{{ post.title }}</a></h3>
