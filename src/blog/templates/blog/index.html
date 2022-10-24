@@ -14,57 +14,88 @@
 <body>
     <header>
      
+    <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'images/user.png' %}" alt="" width="30px">
+            المدونة
 
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="{% static 'images/user.png' %}" alt="" width="30px">
-        المدونة
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">من أنا</a>
+              </li>
 
-      </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">من أنا</a>
-          </li>
-
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
-              دوراتي
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">بايثون</a></li>
-              <li><a class="dropdown-item" href="#"> php</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">css</a></li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+                  دوراتي
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">بايثون</a></li>
+                  <li><a class="dropdown-item" href="#"> php</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">css</a></li>
+                </ul>
+              </li>
+              
             </ul>
-          </li>
-          
-        </ul>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item"><a class="nav-link" href="#">تسجيل دخول</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">تسجيل </a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-
-
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item"><a class="nav-link" href="#">تسجيل دخول</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">تسجيل </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Header -->
     </header>
-   
 
-    <h1>Hello !</h1>
-    <h1>مرحبــا !</h1>
-    <i class="fa-solid fa-house-user"></i>
+
+
+    <!-- /////////////////////////////////////////////// -->
+    
+    <section>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-8">التدوينات</div>
+            <div class="col-md-4">الشريط الجانبي</div>
+          </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
