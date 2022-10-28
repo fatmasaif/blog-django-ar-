@@ -63,6 +63,7 @@
 
 
 
+
     <!-- /////////////////////////////////////////////// -->
     
     <section>
@@ -74,13 +75,11 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-3">
-                <h3 class="text-center bg-secondary text-light p-2">اخر التدوينات</h3>
-                <ul>
-                  <li><a href="#">sssssssss</a></li>
-                  <li><a href="#">aaaaaaaaa</a></li>
-                  <li><a href="#">bbbbbbbbb</a></li>
-                  <li><a href="#">ccccccccc</a></li>
-                  <li><a href="#">ddddddddd</a></li>
+                <h3 class="text-center bg-secondary text-light p-2 m-0">اخر التدوينات</h3>
+                <ul class="list-group p-0 ">
+                  {% for post in posts %}
+                  <li class="list-group-item"><a class="text-dark" href="{% url 'post_detail' post.id %}">{{post.title}}</a></li>
+                  {% endfor %}
                 </ul>
               </div>
 

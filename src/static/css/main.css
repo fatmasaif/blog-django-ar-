@@ -24,3 +24,10 @@ body {
     
     border: 1px solid #ccc;
 }
+.lastest-post, .lastest-comment{
+    padding: 0 15px;
+}
+.comment{
+    background-color: #f8f8f8;
+    border: 1px dashed #ccc;
+}
