@@ -1,0 +1,15 @@
+<ul>
+    {% for comment in l_comment %}
+    <li class="list-group-item">
+        <a class="text-dark" href="{% url 'post_detail' comment.post.id %}">
+         {% if comment.body|length > 30  %}
+            {{comment.body|slice:'20'}}
+         {% else %}  
+         {{comment.body}}
+         {% endif %} 
+        </a></li>
+    {% empty %}
+    <li class="list-group-item">لا توجد تعليقات</li>
+
+    {% endfor %}
+  </ul>
