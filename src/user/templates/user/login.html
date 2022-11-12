@@ -2,6 +2,13 @@
 {% load static %}
 {% block content %}
 {% load crispy_forms_tags %}
+{% if messages %}
+ {% for message in messages %}
+  <div class="alert alert-{{message.tags}}">
+    {{message}}
+  </div>
+ {% endfor %}
+{% endif %}
 <div class="border p-4">
     
     <h3 class="border-bottom pb-2 mb-3 mt-5">تسجيل الدخول</h3>
